@@ -39,7 +39,7 @@ tomcat版本
 
 复制下面的文件到TOMCAT_BASE/lib目录:
 
-- tomcat8.5-redis-session-manager.jar
+- tomcat8.5-redis-session-manager-0.0.1.jar
 - jedis-2.5.2.jar
 - commons-pool2-2.2.jar
 

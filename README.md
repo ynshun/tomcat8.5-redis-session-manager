@@ -1,23 +1,38 @@
 tomcat-redis-session-manager 
-=======================================
 ---
+
+
+
 
 tomcat版本
 --------
 
-支持tomcat8.5，没有对tomcat8.0、tomcat7做测试
+支持：tomcat8.5.60
+
+下载：https://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.60/bin/apache-tomcat-8.5.60.zip
 
 
 用法
 ---
 添加下面的配置到tomcat的context.xml中
 
-    <Valve className="com.s.tomcat.redissessions.RedisSessionHandlerValve"/> 
-	<Manager className="com.s.tomcat.redissessions.RedisSessionManager" 
+    <Valve className="com.kacheap.tomcat.redis.sessions.RedisSessionHandlerValve"/> 
+	<Manager className="com.kacheap.tomcat.redis.sessions.RedisSessionManager" 
 			  host="172.16.20.140"
 			  port="6379"
 			  database="0" 
 			  password="123456"
+			  maxInactiveInterval="60" /> 
+
+
+---
+
+	<Valve className="com.kacheap.tomcat.redis.sessions.RedisSessionHandlerValve"/> 
+	<Manager className="com.kacheap.tomcat.redis.sessions.RedisSessionManager" 
+			  host="172.20.201.120"
+			  port="6379"
+			  database="0" 
+			  password="alinewchargedb015P2y2BGPFlENerlJzzKUBc9cDV8xK7"
 			  maxInactiveInterval="60" /> 
 
 

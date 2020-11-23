@@ -9,7 +9,10 @@ tomcat版本
 
 支持：tomcat8.5.60
 
-下载：https://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.60/bin/apache-tomcat-8.5.60.zip
+下载：
+    Windows: https://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.60/bin/apache-tomcat-8.5.60.zip
+    Linux: https://downloads.apache.org/tomcat/tomcat-8/v8.5.60/bin/apache-tomcat-8.5.60.tar.gz
+
 
 
 用法
